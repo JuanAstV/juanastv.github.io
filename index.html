@@ -71,11 +71,13 @@
       justify-content: space-between;
       align-items: center;
       padding: 1rem;
+      flex-wrap: wrap;
     }
 
     nav div.nav-links {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -107,6 +109,24 @@
 
     .switch-theme i, .switch-lang i {
       margin-right: 0.3rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav div.nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      nav a, .switch-theme, .switch-lang {
+        margin: 0.5rem 0;
+        margin-left: 0;
+      }
     }
 
     .hero {

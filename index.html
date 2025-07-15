@@ -267,10 +267,12 @@
   </div>
 
   <script>
-    function toggleTheme() {
-      const current = document.body.getAttribute("data-theme");
-      document.body.setAttribute("data-theme", current === "light" ? "dark" : "light");
-    }
+  function toggleTheme() {
+    const body = document.body;
+    const currentTheme = body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    body.setAttribute('data-theme', newTheme);
+  }
 
     function toggleLang() {
     alert("Cambio de idioma próximamente...");

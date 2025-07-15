@@ -93,6 +93,16 @@
       color: white;
       padding-top: 5rem;
     }
+    
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s ease-in-out;
+    }
 
     .hero h1 {
       font-size: 3rem;
@@ -153,13 +163,14 @@
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#contacto">Contacto</a>
-        <span class="switch-lang" onclick="toggleLang()">🌐</span>
-        <span class="switch-theme" onclick="toggleTheme()">🌙</span>
+        <span class="switch-lang" onclick="toggleLang()">🌐Esp - En</span>
+        <span class="switch-theme" onclick="toggleTheme()">🌙Tema</span>
       </div>
     </nav>
   </header>
 
   <div class="hero">
+    <img src="perfil.jpg.jpeg" alt="Foto de perfil de Juan">
     <h1 id="hero-title">Bienvenido a mi sitio web</h1>
     <p id="hero-sub">Estudiante de Ingeniería Civil Industrial</p>
     <p>Universidad Técnica Federico Santa María </p>

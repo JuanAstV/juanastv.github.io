@@ -79,7 +79,14 @@
 
     .switch-theme, .switch-lang {
       cursor: pointer;
-      font-size: 1.2rem;
+      font-size: 1rem;
+      margin-left: 1rem;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .switch-theme i, .switch-lang i {
+      margin-right: 0.3rem;
     }
 
     .hero {
@@ -163,8 +170,8 @@
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#contacto">Contacto</a>
-        <span class="switch-lang" onclick="toggleLang()">🌐Esp - En</span>
-        <span class="switch-theme" onclick="toggleTheme()">🌙Tema</span>
+        <span class="switch-lang" onclick="toggleLang()"><i class="fas fa-globe"></i> Esp - En</span>
+        <span class="switch-theme" onclick="toggleTheme()"><i class="fas fa-adjust"></i> Tema</span>
       </div>
     </nav>
   </header>

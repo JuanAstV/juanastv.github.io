@@ -113,23 +113,23 @@
       margin-right: 0.3rem;
     }
 
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+    @media (max-width: 600px) {
+     nav {
+       font-size: 14px;
+       padding: 10px;
+     }
 
-      nav div.nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-      }
+     nav ul {
+       flex-direction: column;
+       gap: 8px;
+       align-items: flex-start;
+     }
 
-      nav a, .switch-theme, .switch-lang {
-        margin: 0.5rem 0;
-        margin-left: 0;
-      }
-    }
+     .logo {
+       width: 40px;
+       height: auto;
+     }
+   }
 
     .hero {
       display: flex;
@@ -235,7 +235,9 @@
 
 
   <div class="hero">
-    <img src="perfil.jpg.jpeg" alt="Foto de perfil de Juan">
+    <a href="/">
+      <img src="musculo.png" alt="Logo" class="h-10 w-10 rounded-full">
+    </a>
     <h1 id="hero-title">Bienvenid@ a mi sitio web</h1>
     <p id="hero-sub">Juan Astudillo Vera</p>
     <p>Estudiante de Ingeniería Civil Industrial</p>

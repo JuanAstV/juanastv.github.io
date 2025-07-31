@@ -114,22 +114,35 @@
     }
 
     @media (max-width: 768px) {
-      nav {
+      .hamburger {
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
+        cursor: pointer;
+        padding: 0.5rem;
       }
 
-      nav div.nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
+      .hamburger span {
+        height: 3px;
+        width: 25px;
+        background: var(--text);
+        margin: 4px 0;
+        transition: 0.4s;
       }
 
-      nav a, .switch-theme, .switch-lang {
-        margin: 0.5rem 0;
-        margin-left: 0;
+      @media (max-width: 768px) {
+        .hamburger {
+          display: flex;
+        }
+
+        .nav-links {
+          display: none;
+          width: 100%;
+        }
+
+        .nav-links.active {
+          display: flex;
+        }
       }
-    }
 
     .hero {
       display: flex;
@@ -223,7 +236,12 @@
   <header>
     <nav>
       <div><img src="icono.png" alt="Logo personal" style="height: 64px;"></div>
-      <div class="nav-links">
+      <div class="hamburger" onclick="toggleMenu()">
+       <span></span>
+       <span></span>
+       <span></span>
+     </div>
+       <div class="nav-links">
         <a href="#sobre-mi" id="nav-about">Sobre mí</a>
         <a href="#proyectos" id="nav-projects">Proyectos</a>
         <a href="#contacto" id="nav-contact">Contacto</a>
@@ -300,6 +318,12 @@
     function toggleLang() {
     alert("Cambio de idioma próximamente...");
   }
+     
+    function toggleMenu() {
+    const links = document.querySelector('.nav-links');
+    links.classList.toggle('active');
+  }
+
   </script>
 </body>
 </html>

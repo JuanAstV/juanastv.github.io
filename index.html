@@ -216,6 +216,63 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+     #proyectos {
+  margin-top: 3rem;
+}
+
+.ensayos-container {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.ensayo-item {
+  padding: 1.2rem 1.4rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+[data-theme="dark"] .ensayo-item {
+  background: rgba(40, 40, 40, 0.4);
+}
+
+.ensayo-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.ensayo-fecha {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+.ensayo-descripcion {
+  margin: 0.7rem 0 0.9rem 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.ensayo-link {
+  font-weight: 600;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.ensayo-link:hover {
+  opacity: 0.7;
+}
+
+.ensayo-proximamente {
+  opacity: 0.7;
+  text-align: center;
+}
+
   </style>
 </head>
 
@@ -272,9 +329,35 @@
   <div class="divider"></div>
 
   <section id="proyectos">
-    <h2>Proyectos</h2>
-    <p>Próximamente...</p>
-  </section>
+  <h2>Ensayos y Columnas</h2>
+  <p>
+    Reflexiones sobre educación, política, igualdad de oportunidades, sociedad y el país que quiero construir. 
+    Este espacio crece contigo: cada nuevo ensayo se suma aquí.
+  </p>
+
+  <div class="ensayos-container">
+
+    <!-- Ensayo 1 -->
+    <article class="ensayo-item">
+      <h3>Reprimir: otra forma de mentir</h3>
+      <span class="ensayo-fecha">19 de noviembre de 2025</span>
+      <p class="ensayo-descripcion">
+        El castigo promete una solución que solo la educación puede dar.
+      </p>
+      <a href="ensayo-reprimir.html" class="ensayo-link">Leer ensayo →</a>
+    </article>
+
+
+    <!-- Espacio para seguir creciendo -->
+    <article class="ensayo-item ensayo-proximamente">
+      <h3>Próximamente…</h3>
+      <p class="ensayo-descripcion">
+        Nuevas columnas y reflexiones en camino.
+      </p>
+    </article>
+
+  </div>
+</section>
 
   <div class="divider"></div>
 
